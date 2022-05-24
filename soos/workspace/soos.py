@@ -1286,9 +1286,9 @@ class SOOSAnalysisScript:
         # CONTEXT PARAMETERS
 
         parser.add_argument("-buri", dest="base_uri",
-                            help="API URI Path. Default Value: https://qa-api.soos.io/api/",
+                            help="API URI Path. Default Value: https://api.soos.io/api/",
                             type=str,
-                            default="https://qa-api.soos.io/api/",
+                            default="https://api.soos.io/api/",
                             required=False
                             )
 
