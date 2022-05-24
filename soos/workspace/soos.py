@@ -20,7 +20,7 @@ ANALYSIS_START_TIME = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 class GithubVersionChecker:
-    GITHUB_LATEST_RELEASE_URL = "https://raw.githubusercontent.com/soos-io/soos-ci-analysis-python/release-1.5.5/src/cli"
+    GITHUB_LATEST_RELEASE_URL = "https://api.github.com/repos/soos-io/soos-ci-analysis-python/releases/latest"
     VERSION_KEY = "tag_name"
     URL_KEY = "html_url"
 
