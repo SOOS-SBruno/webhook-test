@@ -1665,18 +1665,3 @@ if __name__ == "__main__":
             sys.exit(1)
         else:
             sys.exit(0)
-
-######
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
