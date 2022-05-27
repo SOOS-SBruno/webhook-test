@@ -364,6 +364,7 @@ class SOOSContext:
         '''
         The parameters that are present in load_from_env_var will have a chance to be overloaded here.
         All other parameters can only be found in the args list.
+
         :param script_args:
         :return:
         '''
@@ -951,6 +952,7 @@ class SOOS:
                     if self.script.on_failure == SOOSOnFailure.CONTINUE_ON_FAILURE:
                         return
                     else:
+                        soos.console_log_verbose("Failures reported, failing build.")
                         sys.exit(1)
 
                 elif analysis_status.lower() == "error":
@@ -1320,7 +1322,7 @@ class SOOSAnalysisScript:
                                  "fail_the_build: Fail The Build ** Default Value, "
                                  "continue_on_failure: Continue On Failure",
                             type=str,
-                            default="fail_the_build",
+                            default="continue_on_failure",
                             required=False
                             )
 
@@ -1665,3 +1667,5 @@ if __name__ == "__main__":
             sys.exit(1)
         else:
             sys.exit(0)
+
+######
